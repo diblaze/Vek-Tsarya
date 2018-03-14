@@ -44,6 +44,8 @@ SWE_revolutionary_nationalism_ADJ:0 "Countryn"
 POLITICS_PER_ALBIN_HANSSON_DESC:0 "Per Albin Hansson got elected as Prime Minister in the year 1932 when his party 'Social Democrats' won the Election. Ever since then, he has lead the country to greatness and helping Norway in their civil war and taking them in under the protection of a union with Sweden."
 SWEDEN_NORWAY_DESC:0 "During the Velikaya Voyna, Sweden has become a strong neutral country by refusing to participate in the war. Sweden refused to help Germany take over Finland, and signed the neutrality pact instead alongside with Norway and Denmark. Germany did not take to this kindly, and in a last ditch effort attacked Denmark. Sweden quickly responded by sending troops to Copenhagen and helping them fight against the Germans. However, the Danish government fell quickly, forcing Sweden to install a Swedish government in Denmark to ensure stablity and to repel the socialists. After Denmark managed to form a stable government, Sweden guaranteed their indepedence. Sweden helped Norway fight off the socialist uprising, and in the end got into a union with Norway."
 #IDEAS# 
+SWE_elections_1936:0 "Election Period"
+SWE_elections_1936_desc:0 "The elections in Sweden has begun!"
 #CUSTOM TOOLTIPS AND FLAGS# 
 #DECISIONS (1.5 Update)# 
 #FOCUSES#
@@ -55,4 +57,6 @@ mandatoryconscription:0 "Mandatory Conscription"
 mandatoryconscription_desc:0 "Ever since Norway decided to form an union with Sweden, there has been talks about gathering all the Norweigan men and incorporate them into the Swedish army. The Parliament has now issued a bill where all fit-for-service men in Ostlandet are conscripted into the Swedish Armed Forces."
 election1936:0 "Elections 1936"
 election1936_desc:0 "It is time for general elections."
+sidewiththesocialdemocrats:0 "Social Democrats"
+sidewiththesocialdemocrats_desc:0 "The Social Democrats has once again won the elections, with ideas to reunite Scandinavia under peaceful terms and to make sure no attack like the one on Denmark will happen to any of us again!"
 

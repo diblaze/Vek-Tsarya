@@ -90,7 +90,7 @@ focus_tree = {
         }
 
         cost = 1
-        x = 5
+        x = 10
         y = 0
         mutually_exclusive = { }
         prerequisite = { }
@@ -100,6 +100,62 @@ focus_tree = {
                 days = 1
                 id = sweden.1
             }
+            
+        }
+    }
+        #Focus for Pick a Side
+    focus={
+        id = sidewiththesocialdemocrats
+        icon = GFX_goal_generic_radar
+        ai_will_do = {
+            factor = 0.5
+        }
+        available = {
+            has_country_flag = SWE_elections_flag
+        }
+        cost = 1
+        x = 9
+        y = 1
+        mutually_exclusive = { 
+            focus = sidewiththesocialists
+         }
+        prerequisite = { 
+            focus = election1936 
+        }
+        available_if_capitulated = no
+        completion_reward = {
+            country_event = {
+                days = 1
+                id = sweden.2
+            }
+            clr_country_flag = SWE_elections_flag
+        }
+    }
+
+    focus={
+        id = sidewiththesocialists
+        icon = GFX_goal_generic_radar
+        ai_will_do = {
+            factor = 0.5
+        }
+        available = {
+            has_country_flag = SWE_elections_flag
+        }
+        cost = 1
+        x = 11
+        y = 1
+        mutually_exclusive = {
+            focus = sidewiththesocialdemocrats
+        }
+        prerequisite = { focus = election1936 }
+        
+        available_if_capitulated = no
+        completion_reward = {
+            country_event = {
+                days = 1
+                id = sweden.2
+            }
+            clr_country_flag = SWE_elections_flag
         }
     }
 }

@@ -15,7 +15,10 @@ country_event = {
 	
 	option = { # yes
 		name = sweden.1.a
-        
+        set_country_flag = SWE_elections_flag           
+
+        }
+
 		# Parliament locks down during elections.
 		#create_country_leader = {
 		#	name = "François de La Rocque"

@@ -1,0 +1,13 @@
+### Swedish Ideas ###
+
+ideas = {
+	## Country Ideas ##
+#	country = {
+#		SWE_elections_1936 = {
+#			picture = great_depression
+#		}
+#	}
+}
+	
+	
+
