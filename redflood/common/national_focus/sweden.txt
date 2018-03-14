@@ -17,7 +17,7 @@ focus_tree = {
             factor = 0.5
         }
         cost = 1
-        x = 1
+        x = 2
         y = 0
         mutually_exclusive = { }
         prerequisite = {}
@@ -71,6 +71,35 @@ focus_tree = {
 				category = decryption_tech
 				category = computing_tech
 			}
+        }
+    }
+    
+    #Focus for Pick a Side
+    focus={
+        id = election1936
+        icon = GFX_goal_generic_radar
+        ai_will_do = {
+            factor = 1
+        }
+        available = {
+            if = {
+                OR = {
+                    date > 1936.09.20
+                }
+            }
+        }
+
+        cost = 1
+        x = 5
+        y = 0
+        mutually_exclusive = { }
+        prerequisite = { }
+        available_if_capitulated = no
+        completion_reward = {
+            country_event = {
+                days = 1
+                id = sweden.1
+            }
         }
     }
 }
