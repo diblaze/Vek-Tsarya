@@ -1,0 +1,76 @@
+focus_tree = {
+    id = 'sweden'
+    country = {
+    factor=0
+        modifier = {
+        add = 10
+        tag = SWE
+        }
+    }
+    default = no
+
+    #Focus for Forsvarsbeslutet
+    focus={
+        id = forsvarsbeslutet
+        icon = GFX_goal_generic_position_armies
+        ai_will_do = {
+            factor = 0.5
+        }
+        cost = 1
+        x = 1
+        y = 0
+        mutually_exclusive = { }
+        prerequisite = {}
+        available_if_capitulated = no
+        completion_reward = {
+            #add_manpower = 1000000 
+            #add_national_unity = 0.20
+            add_political_power = 50
+            #army_experience = 10
+        }
+    }
+    
+    #Focus for Mandatory Conscription
+    focus={
+        id = mandatoryconscription
+        icon = GFX_goal_generic_position_armies
+        ai_will_do = {
+            factor = 0.3
+        }
+        cost = 4.28
+        x = 0
+        y = 1
+        mutually_exclusive = { }
+        prerequisite = { focus = forsvarsbeslutet}
+        available_if_capitulated = no
+        completion_reward = {
+            add_stability = 0.2
+            army_experience = 10
+        }
+    }
+
+    #Focus for Forsvarsstaben
+    focus={
+        id = forsvarsstaben
+        icon = GFX_goal_generic_radar
+        ai_will_do = {
+            factor = 0.3
+        }
+        cost = 4.28
+        x = 2
+        y = 1
+        mutually_exclusive = { }
+        prerequisite = { focus = forsvarsbeslutet }
+        available_if_capitulated = no
+        completion_reward = {
+            #TODO: ADD RESEARCH MODIFIER FOR RADIO/DECRYPTION
+			add_tech_bonus = {
+				name = codebreaking_bonus
+				bonus = 0.5
+				uses = 1
+				category = decryption_tech
+				category = computing_tech
+			}
+        }
+    }
+}

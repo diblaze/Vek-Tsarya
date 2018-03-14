@@ -47,4 +47,10 @@ SWEDEN_NORWAY_DESC:0 "During the Velikaya Voyna, Sweden has become a strong neut
 #CUSTOM TOOLTIPS AND FLAGS# 
 #DECISIONS (1.5 Update)# 
 #FOCUSES#
+forsvarsbeslutet:0 "Försvarsbeslutet"
+forsvarsbeslutet_desc:0 "A defense decision is usually made by the Swedish Parliament, every four years, about how the structure and development of the Armed Forces will look in the coming years."
+forsvarsstaben:0 "Försvarsstaben"
+forsvarsstaben_desc:0 "A modern Defense Force is needed, and will be tasked with designing the use of the state's defense agents and performing counter-intelligence acts to all enemies of Sweden."
+mandatoryconscription:0 "Mandatory Conscription"
+mandatoryconscription_desc:0 "Ever since Norway decided to form an union with Sweden, there has been talks about gathering all the Norweigan men and incorporate them into the Swedish army. The Parliament has now issued a bill where all fit-for-service men in Ostlandet are conscripted into the Swedish Armed Forces."
 
