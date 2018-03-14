@@ -2,11 +2,31 @@
 
 ideas = {
 	## Country Ideas ##
-#	country = {
+	country = {
 #		SWE_elections_1936 = {
 #			picture = great_depression
 #		}
-#	}
+		SWE_no_socialists_in_our_country = {
+			picture = home_of_revolution #TODO: CHANGE THIS TO A BETTER FLAG
+			modifier = {
+				unity_factor = 0.3
+				political_power_gain = 0.5
+				drift_defence_factor = 0.5
+			}
+
+		}
+
+		SWE_socialists_in_our_country = {
+			picture = home_of_revolution #TODO: CHANGE THIS TO A BETTER FLAG
+			modifier = {
+				unity_factor = 0.3
+				political_power_cost = 0.5
+				drift_defence_factor = 0.5
+			}
+
+		}
+
+	}
 }
 	
 	

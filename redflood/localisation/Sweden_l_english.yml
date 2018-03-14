@@ -42,11 +42,17 @@ SWE_revolutionary_nationalism_ADJ:0 "Countryn"
 #PARTIES# 
 #LEADER DESCRITIONS AND BOOKMARK# 
 POLITICS_PER_ALBIN_HANSSON_DESC:0 "Per Albin Hansson got elected as Prime Minister in the year 1932 when his party 'Social Democrats' won the Election. Ever since then, he has lead the country to greatness and helping Norway in their civil war and taking them in under the protection of a union with Sweden."
+POLITICS_NILS_FLYG_DESC:0 "Lorem ipsum"
 SWEDEN_NORWAY_DESC:0 "During the Velikaya Voyna, Sweden has become a strong neutral country by refusing to participate in the war. Sweden refused to help Germany take over Finland, and signed the neutrality pact instead alongside with Norway and Denmark. Germany did not take to this kindly, and in a last ditch effort attacked Denmark. Sweden quickly responded by sending troops to Copenhagen and helping them fight against the Germans. However, the Danish government fell quickly, forcing Sweden to install a Swedish government in Denmark to ensure stablity and to repel the socialists. After Denmark managed to form a stable government, Sweden guaranteed their indepedence. Sweden helped Norway fight off the socialist uprising, and in the end got into a union with Norway."
 #IDEAS# 
-SWE_elections_1936:0 "Election Period"
-SWE_elections_1936_desc:0 "The elections in Sweden has begun!"
+SWE_no_socialists_in_our_country:0 "The Social Democrats has won!"
+SWE_no_socialists_in_our_country_desc:0 "The Social Democrats has won once again, making the Left Party strongly oppose the government."
+SWE_socialists_in_our_country:0 "The Left Party has won!"
+SWE_socialists_in_our_country_desc:0 "For the first time ever, the Left Party has won the elections! It is time to bring order to Sweden!"
 #CUSTOM TOOLTIPS AND FLAGS# 
+SWE_elections_flag:0 "Swedish elections has started!"
+SWE_socialdemocrats_rule_flag:0 "The Social Democrat party has won the election."
+SWE_socialists_rule_flag:0 "The Left Wing party has won the election."
 #DECISIONS (1.5 Update)# 
 #FOCUSES#
 forsvarsbeslutet:0 "Försvarsbeslutet"
@@ -59,4 +65,17 @@ election1936:0 "Elections 1936"
 election1936_desc:0 "It is time for general elections."
 sidewiththesocialdemocrats:0 "Social Democrats"
 sidewiththesocialdemocrats_desc:0 "The Social Democrats has once again won the elections, with ideas to reunite Scandinavia under peaceful terms and to make sure no attack like the one on Denmark will happen to any of us again!"
+sidewiththesocialists:0 "Socialists"
+sidewiththesocialists_desc:0 "The "
+#EVENTS#
+sweden.1.t:0 "Elections in Sweden!" 
+sweden.1.d:0 "The general election in Sweden has begun! Will the people get their will through and choose the Social Democrats again and peacefully get through the post-war period, or will the Left Party somehow win and complete their thoughts on a united Scandinavia through an iron hand?"
+sweden.1.a:0 "We hope for the best."
+sweden.2.t:0 "Election result"
+sweden.2.d:0 "After countless of hours counting the votes, the results are finally in!"
+sweden.2.a:0 "The Social Democrats wins!"
+sweden.2.b:0 "The Left Party wins!"
 
+sweden.3.t:0 "The Social Democrats has won!"
+sweden.3.d:0 "The people has voted! The Social Democrats has won once again, and formed a government without the Socialists in it. The Left Party are not pleased with this."
+sweden.3.a:0 ""

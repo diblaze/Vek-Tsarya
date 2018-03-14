@@ -4,7 +4,7 @@
 
 add_namespace = sweden
 
-# de la Rocque formalizes  control
+# Election
 country_event = {
 	id = sweden.1
 	title = sweden.1.t
@@ -17,7 +17,7 @@ country_event = {
 		name = sweden.1.a
         set_country_flag = SWE_elections_flag           
 
-        }
+    }
 
 		# Parliament locks down during elections.
 		#create_country_leader = {
@@ -27,5 +27,82 @@ country_event = {
 		#	ideology = conservatism
 		#	traits = {
 		#}
-	}
+}
+
+# Who has won?
+country_event = {
+	id = sweden.2
+	title = sweden.2.t
+	desc = sweden.2.d
+	picture = GFX_report_event_de_la_rocque
+	
+	#is_triggered_only = yes
+
+    trigger = {
+        tag = SWE
+        date > 1936.9.21
+        has_country_flag = SWE_elections_flag
+    }
+
+    mean_time_to_happen = {
+        days = 1
+    }
+	
+	option = { # Social Democrats
+		name = sweden.2.a
+        ai_factor = {
+            factor = 0.8
+        }
+        clr_country_flag = SWE_elections_flag
+        set_country_flag = SWE_socialdemocrats_rule_flag
+
+        add_political_power = 100
+        set_politics = {
+            ruling_party = social_democratism
+            elections_allowed = no
+        }
+
+        add_ideas = { 
+            SWE_no_socialists_in_our_country
+        }
+
+        remove_ideas = {
+            SWE_socialists_in_our_country
+        }
+
+    }
+    
+    option = { # Left Party (Socialists)
+		name = sweden.2.b
+        ai_factor = {
+            factor = 0.2
+        }
+        clr_country_flag = SWE_elections_flag
+        clr_country_flag = SWE_socialdemocrats_rule_flag
+        set_country_flag = SWE_socialists_rule_flag
+
+        add_political_power = 100
+        set_politics = {
+            ruling_party = vanguard_socialism
+            elections_allowed = no
+        }
+
+        add_ideas = { #TODO: Add negative ideas (people fleeing the country etc.)
+            SWE_socialists_in_our_country
+        }
+
+        remove_ideas = {
+            SWE_no_socialists_in_our_country
+        }
+
+        create_country_leader = {
+            name = "Nils Flyg"
+            desc = "POLITICS_NILS_FLYG_DESC"
+            picture = "Portrait_Nils_Flyg.tga"
+            expire = "1965.1.1"
+            ideology = national_vanguardism
+            traits = {} #TODO: Add Iron Fist trait
+        }
+
+    }
 }
